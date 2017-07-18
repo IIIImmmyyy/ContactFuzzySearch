@@ -58,4 +58,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    /**
+     * 获取首字母
+     * @param contacts1
+     */
+    private void getFirstLetter(List<SystemContact.Contact> contacts1){
+        String letter = contacts1.get(0).getLetter(); //
+    }
+
 }
