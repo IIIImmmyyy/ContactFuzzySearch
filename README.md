@@ -45,3 +45,21 @@ Android通讯录模糊搜索 ,模糊搜索通讯录联系人。 排序按照A-Z�
     private void getFirstLetter(List<SystemContact.Contact> contacts1){
         String letter = contacts1.get(0).getLetter(); //
     }
+4.获取缩写
+####
+     /**
+     * 获取缩写  中文林俊杰 = ljj  不支持多音字
+     * @param contacts1
+     */
+    private void getAbbreviate(List<SystemContact.Contact> contacts1){
+        String abbreviate = contacts1.get(0).getAbbreviate();
+    }
+5.获取全拼
+####
+    /**
+    * 获取全拼 林俊杰 =linjunjie //  不支持多音字
+    * @param contacts1
+    */
+    private void getQuanPin(List<SystemContact.Contact> contacts1){
+        String quanPin = contacts1.get(0).getQuanPin();
+    }

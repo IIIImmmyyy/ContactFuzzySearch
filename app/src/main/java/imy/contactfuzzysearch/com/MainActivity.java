@@ -67,4 +67,19 @@ public class MainActivity extends AppCompatActivity {
         String letter = contacts1.get(0).getLetter(); //
     }
 
+    /**
+     * 获取缩写  中文林俊杰 = ljj  不支持多音字
+     * @param contacts1
+     */
+    private void getAbbreviate(List<SystemContact.Contact> contacts1){
+        String abbreviate = contacts1.get(0).getAbbreviate();
+    }
+
+    /**
+     * 获取全拼 林俊杰 =linjunjie //  不支持多音字
+     * @param contacts1
+     */
+    private void getQuanPin(List<SystemContact.Contact> contacts1){
+        String quanPin = contacts1.get(0).getQuanPin();
+    }
 }
