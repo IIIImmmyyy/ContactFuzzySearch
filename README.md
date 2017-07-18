@@ -25,7 +25,7 @@ Android通讯录模糊搜索 ,模糊搜索通讯录联系人。 排序按照A-Z�
                 }
             }
         }).start();
-2.监控editview.模糊搜索;
+2.监控editview.模糊搜索; <br>(注意：在无权限情况下，onFuzzySearch 是不会有回调参数. 模糊搜索仅在有权限时及通讯录联系人数>0时才有回调)
   
      FuzzySearchHelper.getInstance().init(editText,MainActivity.this)
                 .setOnFuzzySearchCallBack(new FuzzySearchHelper.FuzzySearchCallBack() {
