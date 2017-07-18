@@ -1,4 +1,4 @@
-package imy.contactfuzzysearch.com;
+package imy.mylibrary.Utils;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.provider.ContactsContract;
 import java.util.ArrayList;
 import java.util.List;
 
-import imy.contactfuzzysearch.com.Entity.SystemContact;
+import imy.mylibrary.Entity.SystemContact;
 
 
 /**

@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.List;
 
 import imy.contactfuzzysearch.com.Adapter.ContactAdapter;
-import imy.contactfuzzysearch.com.Entity.SystemContact;
+import imy.mylibrary.Entity.SystemContact;
+import imy.mylibrary.Utils.FuzzySearchHelper;
+import imy.mylibrary.Utils.SystemContactsHelper;
 
 public class MainActivity extends AppCompatActivity {
     private ListView mainListView;
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 SystemContact contacts = SystemContactsHelper.getInstance().getContacts(MainActivity.this);
                 if (contacts.getError_code()==0){
                     List<SystemContact.Contact> contacts1 = contacts.getContacts();
-                    Log.i("MainActivity","contacts1:"+contacts1.size());
                     setAdapter(contacts1);
                 }else {
                     //error // or no permission

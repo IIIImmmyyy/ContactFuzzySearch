@@ -1,16 +1,14 @@
 package imy.contactfuzzysearch.com.Adapter;
 
 import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import java.util.List;
 
-import imy.contactfuzzysearch.com.Entity.SystemContact;
+import imy.mylibrary.Entity.SystemContact;
 import imy.contactfuzzysearch.com.R;
 
 /**

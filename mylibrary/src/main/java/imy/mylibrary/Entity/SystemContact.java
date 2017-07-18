@@ -1,4 +1,4 @@
-package imy.contactfuzzysearch.com.Entity;
+package imy.mylibrary.Entity;
 
 import java.util.List;
 

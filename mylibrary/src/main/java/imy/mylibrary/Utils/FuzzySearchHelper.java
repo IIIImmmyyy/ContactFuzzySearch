@@ -1,4 +1,4 @@
-package imy.contactfuzzysearch.com;
+package imy.mylibrary.Utils;
 
 import android.content.Context;
 import android.text.Editable;
@@ -8,8 +8,7 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
-import imy.contactfuzzysearch.com.Entity.SystemContact;
-import imy.contactfuzzysearch.com.Utils.PinYinUtils;
+import imy.mylibrary.Entity.SystemContact;
 
 /**
  * 模糊搜索 针对通讯录

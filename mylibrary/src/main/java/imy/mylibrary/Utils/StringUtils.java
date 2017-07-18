@@ -1,4 +1,4 @@
-package imy.contactfuzzysearch.com;
+package imy.mylibrary.Utils;
 
 import android.text.TextUtils;
 
