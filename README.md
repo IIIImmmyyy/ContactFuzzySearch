@@ -40,7 +40,7 @@ Android通讯录模糊搜索 ,模糊搜索通讯录联系人。 排序按照A-Z�
 
 ####
      /**
-     * 获取首字母
+     * 获取首字母  数字及特殊字符的首字母为#
      * @param contacts1
      */
     private void getFirstLetter(List<SystemContact.Contact> contacts1){
