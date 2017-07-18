@@ -1,8 +1,9 @@
 # ContactFuzzySearch
 Android通讯录模糊搜索 ,模糊搜索通讯录联系人。 排序按照A-Z顺序进行排序。基于pinyin4j。 使用请导入对应jar包;
 
-![github](http://imya.gzdn.openstorage.cn/qiqu/1.png?token=7df5397ef0fae272e5305810a4b963f8aa54ea1b&e=11500361588 "github") 
-如何使用
+![github](http://imya.gzdn.openstorage.cn/qiqu/jdfw.gif?token=3517969efe35f3a3e08b4677c4bde78b7c5e3a09&e=11500363141 "github") 
+
+<br>如何使用
 ===
 1.导入jar包;
 
