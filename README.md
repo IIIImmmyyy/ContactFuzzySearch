@@ -35,3 +35,13 @@ Android通讯录模糊搜索 ,模糊搜索通讯录联系人。 排序按照A-Z�
                     }
                 });
 
+3.某些展示情况下需要用到首字母标示; 可以这么获得;
+
+####
+     /**
+     * 获取首字母
+     * @param contacts1
+     */
+    private void getFirstLetter(List<SystemContact.Contact> contacts1){
+        String letter = contacts1.get(0).getLetter(); //
+    }
