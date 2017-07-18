@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import imy.mylibrary.Entity.SystemContact;
@@ -83,7 +84,29 @@ public class SystemContactsHelper {
             return systemContact;
         }
         systemContact.setError_code(0);
-        systemContact.setContacts(list);
+        List<SystemContact.Contact> contactList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            SystemContact.Contact contact = list.get(i);
+            String name_pinyin;
+            String name_first_letter;
+            String name = contact.getName();
+            String lowerCase = name.toLowerCase();//强转成小写
+            name_pinyin = PinYinUtils.converterToSpell(lowerCase);
+            name_first_letter = PinYinUtils.converterToFirstSpell(lowerCase);
+            String letter = ""; //首字母
+            if (name_first_letter.length() > 0) {
+                letter = name_first_letter.substring(0, 1).toUpperCase();
+            }
+            if (!StringUtils.isLetter(letter)) {//首字符不是字母的用#标识
+                letter = "#";
+            }
+            contact.setLetter(letter);
+            contact.setQuanPin(name_pinyin);
+            contact.setAbbreviate(name_first_letter);
+            contactList.add(contact);
+        }
+        Collections.sort(contactList);
+        systemContact.setContacts(contactList);
         return systemContact;
     }
 }
